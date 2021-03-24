@@ -130,7 +130,7 @@
 
         background-color: greenyellow;
         width: 20%;
-        height: 850px;
+        height: 600px;
         float: left;
     }
 
@@ -184,25 +184,25 @@
 
     #e{
         background-color: indigo;
-        width: 100%;
+        width: 50%;
         height: 250px;
-        /* float: left; */
+        float: left;
     }
     #f{
         background-color: khaki;
-        width: 100%;
+        width: 50%;
         height: 250px;
-        /* float: left; */
+        float: right;
     }
     #g{
         background-color: black;
-        width: 100%;
+        width: 50%;
         height: 250px;
-        /* float: right; */
+        float: right;
     }
     #h{
         background-color: cadetblue;
-        width: 100%;
+        width: 50%;
         height: 250px;
     }
     #i{
@@ -226,7 +226,7 @@
 
       background-color: grey;
       width: 20%;
-      height: 850px;
+      height: 600px;
       float: left;
   }
 
@@ -280,25 +280,25 @@
 
   #e{
       background-color: purple;
-      width: 100%;
+      width: 50%;
       height: 250px;
-      /* float: left; */
+      float: left;
   }
   #f{
       background-color: plum;
-      width: 100%;
+      width: 50%;
       height: 250px;
-      /* float: left; */
+      float: left;
   }
   #g{
       background-color: olivedrab;
-      width: 100%;
+      width: 50%;
       height: 250px;
-      /* float: right; */
+      float: right;
   }
   #h{
       background-color: khaki;
-      width: 100%;
+      width: 50%;
       height: 250px;
   }
   #i{
