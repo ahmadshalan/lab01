@@ -1,4 +1,9 @@
+
+
+
+@media (max-width : 780px){
 #a {
+
     width: 100%;
     height: 75px;
     background-color: rgb(184, 171, 171);
@@ -34,17 +39,33 @@
 
   }
 
+
+  #one {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    
+}
+
+  #one > #e {
+    order:1; 
+}
+
+  #one > #f{
+    order:2;  
+}
+
   #e{
-    width: 50%;
+   width: 100%;
     height: 250px;
     background-color: rgb(96, 145, 33);
-    float: right;
+    /* float: right; */
     overflow:auto;
     margin: auto;
 
   }
   #f{
-    width: 50%;
+    width: 100%;
     height: 250px;
     background-color: rgb(68, 33, 92);
     overflow:auto;
@@ -52,19 +73,34 @@
 
   }
 
+  #two {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+  #two > #g {
+    order:1;
+}
+
+  #two > #h{
+    order:2;
+  }
+    
+
   #g{
-    width: 50%;
+    width: 100%;
     height: 250px;
     background-color: rgb(29, 3, 20);
-    float: right;
+    /* float: right; */
     margin: auto;
 
   }
   #h{
-    width: 50%;
+    width: 100%;
     height: 250px;
     background-color: rgb(211, 188, 226);
-    overflow:auto;
+    /* overflow:auto; */
     margin: auto;
 
   }
@@ -73,10 +109,11 @@
     width: 100%;
     height: 80px;
     background-color: rgb(76, 77, 22);
-    overflow:auto;
+    /* overflow:auto; */
     margin: auto;
 
   }
+}
 
 
   
@@ -84,54 +121,191 @@
   @media( min-width: 960px ) {
     
     #a {
-
+        background-color: green;
         width: 100% ;
         height: 100px;
     }
 
     #b{
-        width: 20.8%;
-        height: 600px;
+
+        background-color: greenyellow;
+        width: 20%;
+        height: 850px;
         float: left;
     }
 
-    #c{
 
-        width: 39.6%;
+    #cd {
+      display: grid;
+      width: 80%;
+      grid-template-columns: 50% 50%;
+      
+  }
+  
+    #cd > #c {
+      order:1; 
+  }
+  
+    #cd > #d{
+      order:2;  
+  }
+    #c{
+        background-color: grey;
+        width: 100%;
         height: 200px;
-        float: left;
+        /* float: left; */
     }
     #d{
-
-        width: 39.6%;
+        background-color: hotpink;
+        width: 100%;
         height: 200px;
     }
-    #e{
 
-        width: 19.8%;
+    #efgh {
+      display: grid;
+      width: 80%;
+      grid-template-columns: 50% 50% 50% 50% ; 
+      
+  }
+  
+    #efgh >#one >#e{
+      order:1; 
+      grid-area: 1/ 1/ 1 / 5;
+  }
+    #efgh > #one >#f{
+      order:2;  
+  }
+    #efgh > #two >#g {
+      order:3; 
+    }
+    #efgh > #two> #h {
+      order:4; 
+}
+
+    #e{
+        background-color: indigo;
+        width: 100%;
         height: 250px;
-        float: left;
+        /* float: left; */
     }
     #f{
-
-        width: 19.8%;
+        background-color: khaki;
+        width: 100%;
         height: 250px;
-        float: left;
+        /* float: left; */
     }
     #g{
-
-        width: 19.8%;
+        background-color: black;
+        width: 100%;
         height: 250px;
-        float: right;
+        /* float: right; */
     }
     #h{
-
-        width: 19.8%;
+        background-color: cadetblue;
+        width: 100%;
         height: 250px;
     }
     #i{
-        width: 79.17%;
+
+        background-color: chocolate;
+        width: 100%;
         height: 150px;
     }
     
   }
+
+  @media ( min-width: 780px ) and (max-width: 960px) {
+    
+    #a {
+      background-color: lightcoral;
+      width: 100% ;
+      height: 100px;
+  }
+
+  #b{
+
+      background-color: grey;
+      width: 20%;
+      height: 850px;
+      float: left;
+  }
+
+
+  #cd {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 50% 50%;
+    
+}
+
+  #cd > #c {
+    order:1; 
+}
+
+  #cd > #d{
+    order:2;  
+}
+  #c{
+      background-color:greenyellow;
+      width: 100%;
+      height: 200px;
+      /* float: left; */
+  }
+  #d{
+      background-color: blue;
+      width: 100%;
+      height: 200px;
+  }
+
+  #efgh {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 50% 50% 50% 50% ; 
+    
+}
+
+  #efgh >#one >#e{
+    order:1; 
+    grid-area: 1/ 1/ 1 / 5;
+}
+  #efgh > #one >#f{
+    order:2;  
+}
+  #efgh > #two >#g {
+    order:3; 
+  }
+  #efgh > #two> #h {
+    order:4; 
+}
+
+  #e{
+      background-color: purple;
+      width: 100%;
+      height: 250px;
+      /* float: left; */
+  }
+  #f{
+      background-color: plum;
+      width: 100%;
+      height: 250px;
+      /* float: left; */
+  }
+  #g{
+      background-color: olivedrab;
+      width: 100%;
+      height: 250px;
+      /* float: right; */
+  }
+  #h{
+      background-color: khaki;
+      width: 100%;
+      height: 250px;
+  }
+  #i{
+
+      background-color: yellowgreen;
+      width: 100%;
+      height: 150px;
+  }
+  
+}
